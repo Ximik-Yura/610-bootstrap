@@ -23,93 +23,22 @@
               <a class="nav-link" href="#products">Products</a>
               <a class="nav-link" href="#contacts">Contacts</a>
               <a class="nav-link" href="#cart.html">Cart</a>
+              <div class="clock nav-link"></div>
             </div>
           </div>
         </div>
       </nav>
-      <div id="products-carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#products-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/baby-yoda.svg" class="d-block w-50 mx-auto" alt="Baby Yoda">
-          </div>
-          <div class="carousel-item">
-            <img src="img/banana.svg" class="d-block w-50 mx-auto" alt="Banana">
-          </div>
-          <div class="carousel-item">
-            <img src="img/girl.svg" class="d-block w-50 mx-auto" alt="Girl">
-          </div>
-          <div class="carousel-item">
-            <img src="img/viking.svg" class="d-block w-50 mx-auto" alt="Viking">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#products-carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#products-carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <div class="products-carousel container">
+        <img class="current-slide d-block w-50 mx-auto" src="" alt="Carousel Slide">
+        <button class="btn btn-primary prev">Prev</button>
+        <button class="btn btn-primary next">Next</button>
       </div>
     </header>
     <main class="container">
       <h2 id="products">Products</h2>
-      <div class="products row">
-        <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="img/baby-yoda.svg"" class="card-img-top" alt="Baby Yoda">
-          <div class="card-body">
-            <h5 class="card-title">Baby Yoda</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              expedita obcaecati adipisci explicabo impedit facere est qui
-              voluptate. Fugiat libero molestiae suscipit eaque quae nihil sequi
-              esse numquam dolor nisi!</p>
-            <button class="btn btn-info">Info</button>
-            <button class="btn btn-primary">Buy</button>
-          </div>
-        </article>
-        <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="img/girl.svg"" class="card-img-top" alt="Girl Yoda">
-          <div class="card-body">
-            <h5 class="card-title">Girl</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              expedita obcaecati adipisci explicabo impedit facere est qui
-              voluptate. Fugiat libero molestiae suscipit eaque quae nihil sequi
-              esse numquam dolor nisi!</p>
-            <button class="btn btn-info">Info</button>
-            <button class="btn btn-primary">Buy</button>
-          </div>
-        </article>
-        <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="img/banana.svg"" class="card-img-top" alt="Banana">
-          <div class="card-body">
-            <h5 class="card-title">Banana</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              expedita obcaecati adipisci explicabo impedit facere est qui
-              voluptate. Fugiat libero molestiae suscipit eaque quae nihil sequi
-              esse numquam dolor nisi!</p>
-            <button class="btn btn-info">Info</button>
-            <button class="btn btn-primary">Buy</button>
-          </div>
-        </article>
-        <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-          <img src="img/viking.svg"" class="card-img-top" alt="Viking">
-          <div class="card-body">
-            <h5 class="card-title">Viking</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              expedita obcaecati adipisci explicabo impedit facere est qui
-              voluptate. Fugiat libero molestiae suscipit eaque quae nihil sequi
-              esse numquam dolor nisi!</p>
-            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#product-info">Info</button>
-            <button class="btn btn-primary">Buy</button>
-          </div>
-        </article>
-      </div>
+      <button class="btn btn-primary sort-desc">Sort by price from highest</button>
+      <button class="btn btn-primary sort-asc">Sort by price from lowest</button>
+      <div class="products row">  </div>
     </main>
     <footer class="container">
       <h2 id="contacts">Contacts!</h2>
@@ -150,5 +79,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/product-list.js"></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>
